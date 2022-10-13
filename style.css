@@ -14,6 +14,19 @@ section{
     margin: 1rem 10%;
     
 }
+
+.github{
+    position: fixed;
+    right: -85px;
+    background: black;
+    color: white;
+    padding: 5px 100px;
+    transform: rotateZ(45deg);
+    top: 25px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 #word{
     font-size: 40px;
     font-weight: bold;
