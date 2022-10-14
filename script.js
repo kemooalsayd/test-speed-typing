@@ -50,7 +50,7 @@ let id;
 let time=0
 let count=0
 let get=localStorage.getItem('high-result');
-// check if there result i localStorage
+// check if there result in localStorage
 if(!get){
     localStorage.setItem('high-result',0)
 }else{
@@ -85,9 +85,8 @@ input.onpaste=()=>{
 // handle keyup event
 input.onkeyup=()=>{
         if (word.innerHTML.length==input.value.length){
-            if(word.innerHTML==input.value){
+            if(word.innerHTML==input.value.toLowerCase()){
                 count+=1
-                console.log(count);
             }
 
             word.innerHTML=list[list.indexOf(word.innerHTML)+1]
